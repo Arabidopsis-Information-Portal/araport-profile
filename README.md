@@ -11,15 +11,11 @@ This is a [Drush](https://github.com/drush-ops/drush) make file and Drupal
 Installation Profile for the [Arabidopsis Information Portal](https://araport.org).
 
 
-Requirements
-============
-============
+## Requirements
 
 You will need Drush installed globally.
 
-Usage
-=====
-=====
+## Usage
 
 First, you need to install Drupal and module dependencies.
 
