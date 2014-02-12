@@ -4,7 +4,7 @@
  *
  * Perform actions to set up the site for this profile.
  */
-function arabidopsis_information_portal_install() {
+function araport_install() {
   // Enable some arabidopsis_information_portal blocks.
   $default_theme = 'open_framework';
   $admin_theme = 'seven';
@@ -89,7 +89,7 @@ function arabidopsis_information_portal_install() {
     $query->values($block);
   }
   $query->execute();
-  
+
   // Insert default pre-defined node types into the database. For a complete
   // list of available node type attributes, refer to the node type API
   // documentation at: http://api.drupal.org/api/HEAD/function/hook_node_info.
