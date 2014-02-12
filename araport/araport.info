@@ -5,10 +5,11 @@ core = 7.x
 ; ----------
 ; Dependencies
 ; ----------
-depencencies[] = backup_migrate
-depencencies[] = backup_migrate_files
-depencencies[] = media 
-depencencies[] = libraries
+
+dependencies[] = backup_migrate
+dependencies[] = backup_migrate_files
+dependencies[] = media
+dependencies[] = libraries
 
 ; Chaos tool suite
 dependencies[] = bulk_export
