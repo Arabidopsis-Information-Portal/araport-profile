@@ -19,12 +19,12 @@ You will need Drush installed globally.
 
 First, you need to install Drupal and module dependencies.
 
-    $> drush make araport.make path/to/install/directory
+    $> drush make araport/araport.make path/to/install/directory
 
-You can omit the install path to install in the current directory. This will
-download Drupal and all dependencies and place them in the correct locations.
+This will download Drupal and all modules, themes, and other dependencies and
+place them in the correct locations within the Drupal installation.
 
 Next, you need to setup Drupal with the **araport** installation profile. Copy
-the `profiles/araport` directory to `path/to/install/directory/profiles`. You
+the `araport` directory to `path/to/install/directory/profiles`. You
 can now access the Drupal instance and select **Arabadopsis Information Portal**
 as an Installation Profile option.
