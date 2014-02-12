@@ -33,3 +33,7 @@ projects[media][subdir] = "contrib"
 projects[libraries][subdir] = "contrib"
 
 projects[admin_menu][subdir] = "contrib"
+
+projects[fpa][subdir] = "contrib"
+
+projects[masquerade][subdir] = "contrib"

@@ -6,6 +6,8 @@ core = 7.x
 ; Dependencies
 ; ----------
 
+dependencies[] = fpa
+dependencies[] = masquerade
 dependencies[] = backup_migrate
 dependencies[] = backup_migrate_files
 dependencies[] = media
