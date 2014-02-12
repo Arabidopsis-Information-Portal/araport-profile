@@ -31,3 +31,5 @@ projects[backup_migrate_files][subdir] = "contrib"
 projects[media][subdir] = "contrib"
 
 projects[libraries][subdir] = "contrib"
+
+projects[admin_menu][subdir] = "contrib"

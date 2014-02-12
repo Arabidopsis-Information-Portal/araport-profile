@@ -1,5 +1,5 @@
 name = Arabidopsis Information Portal
-description = Installtion profile to set up new AIP portal instance
+description = Installation profile to set up new AIP portal instance
 core = 7.x
 
 ; ----------
@@ -10,6 +10,8 @@ dependencies[] = backup_migrate
 dependencies[] = backup_migrate_files
 dependencies[] = media
 dependencies[] = libraries
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
 
 ; Chaos tool suite
 dependencies[] = bulk_export
@@ -51,7 +53,6 @@ dependencies[] = shortcut
 dependencies[] = system
 dependencies[] = taxonomy
 dependencies[] = text
-dependencies[] = toolbar
 dependencies[] = update
 dependencies[] = user
 

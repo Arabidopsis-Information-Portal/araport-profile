@@ -25,6 +25,7 @@ function araport_install() {
     ->condition('type', 'theme')
     ->condition('name', $admin_theme)
     ->execute();
+  variable_set('default_theme', $default_theme);
   variable_set('admin_theme', $admin_theme);
   // activate admin theme when editing a node
   variable_set('node_admin_theme', '1');
