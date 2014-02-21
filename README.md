@@ -13,7 +13,7 @@ Installation Profile for the [Arabidopsis Information Portal](https://araport.or
 
 ## Requirements
 
-You will need Drush installed globally.
+You will need Drush installed globally. [Recommended method.](https://github.com/drush-ops/drush#install---composer)
 
 ## Usage
 
