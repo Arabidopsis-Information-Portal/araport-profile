@@ -3,10 +3,27 @@ core = 7.x
 api = 2
 projects[drupal][version] = "7.x"
 
+; ================================
 ; Include Drupal.org dependencies
+; ================================
+
 includes[] = "drupal-org.make"
 
+; ========
+; Modules
+; ========
+
+projects[agave][type] = "module"
+projects[agave][subdir] = "custom"
+projects[agave][download][type] = "git"
+projects[agave][download][url] = "https://bitbucket.org/mrhanlon/gateway-dna-drupal.git"
+projects[agave][download][branch] = "master"
+projects[agave][downlaod][revision] = "a156599"
+
+; =======
 ; Themes
+; =======
+
 projects[open_framework][type] = "theme"
 projects[open_framework][download][type] = "git"
 projects[open_framework][download][url] = "https://github.com/SU-SWS/open_framework.git"
@@ -17,7 +34,14 @@ projects[open_framework][download][revision] = "bceb9c47f6509ed18e2f174174ced269
 ; Libraries
 ; ==========
 
-libraries[cytoscape.js][download][type] = get
-libraries[cytoscape.js][download][url] = 'http://cytoscape.github.com/cytoscape.js/download/cytoscape.js-2.1.0.zip'
-libraries[cytoscape.js][destination] = libraries
-libraries[cytoscape.js][directory_name] = cytoscape.js
+libraries[cytoscape.js][download][type] = "get"
+libraries[cytoscape.js][download][url] = "http://cytoscape.github.com/cytoscape.js/download/cytoscape.js-2.1.0.zip"
+libraries[cytoscape.js][destination] = "libraries"
+libraries[cytoscape.js][directory_name] = "cytoscape.js"
+
+;libraries[agave-sdk-php][download][type] = "git"
+;libraries[agave-sdk-php][download][url] = "https://bitbucket.org/taccaci/agave-sdk-php.git"
+;libraries[agave-sdk-php][download][branch] = "master"
+;libraries[agave-sdk-php][download][revision] = "aa0a3d74e2cbf32e7a2b3e2e6788ab5c175c3bc9"
+;libraries[agave-sdk-php][destination] = "libraries"
+;libraries[agave-sdk-php][directory_name] = "agave-sdk-php"
