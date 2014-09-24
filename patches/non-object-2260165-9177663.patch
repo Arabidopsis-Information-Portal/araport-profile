@@ -1,0 +1,13 @@
+diff --git a/answers.module b/answers.module
+index 061f0bf..cb5c724 100644
+--- a/answers.module
++++ b/answers.module
+@@ -263,7 +263,7 @@ function answers_field_access($op, $field, $entity_type, $entity, $account) {
+   // Hide the field unless it is in a answer node view (not in a view attached to a question node)
+   elseif (($field['field_name'] == 'field_answer_question') && ($entity_type == 'node') && ($op == 'view')) {
+     $node = menu_get_object('node');
+-    if ($node->type != 'answer') {
++    if (!$node || $node->type != 'answer') {
+       return FALSE;
+     }
+   }
